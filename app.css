@@ -32,7 +32,7 @@ iframe{
     align-items: center;
     width: 100%;
     gap: 1em;
-    /* animation: spin 15s infinite linear; */
+    animation: spin 23s infinite linear;
 }
 
 
@@ -91,6 +91,15 @@ iframe{
 
 }
 
+i:hover{
+    color:  rgb(23, 137, 46);; ;
+}
+
+.grnbtn:hover{
+    background-color: rgb(23, 137, 46);;
+}
+
+
 .box1 .img-fluid {
     border-radius: 20px;
 }
@@ -125,6 +134,10 @@ img {
 }
 
 .prog td i {
+    color: rgb(25, 161, 52);
+}
+
+i {
     color: rgb(25, 161, 52);
 }
 
