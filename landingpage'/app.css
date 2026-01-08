@@ -1,0 +1,260 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}
+
+body{
+    padding-bottom: 200px;
+}
+
+iframe{
+    overflow: hidden;
+    height: 180px;
+    width: 400px;
+}
+
+.sliderman {
+    display: flex;
+    width: 90%;
+    margin: 100px auto;
+    overflow-x: auto;
+}
+
+.form input{
+    margin-top: 10px;
+}
+
+.carapp {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 1em;
+    /* animation: spin 15s infinite linear; */
+}
+
+
+.box2 td{
+    margin-top: 14px;
+    padding-top: 15px;
+
+}
+
+.box2 i{
+    font-size: 19px;
+
+}
+.revi {
+    padding: 1em;
+    width: 50%;
+    align-items: center;
+}
+
+.revi img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@keyframes spin {
+    from {
+        translate: 0;
+    }
+
+    to {
+        translate: -100%;
+    }
+}
+
+
+.box1 {
+    background-color: rgb(232, 255, 228);
+    box-shadow: 0px 2px 4px 0px lightgrey;
+    border-radius: 10px;
+    border: 0.5px solid lightgrey;
+}
+
+.box2 {
+    background-color: rgb(232, 255, 228);
+    box-shadow: 0px 2px 4px 0px lightgrey;
+    border-radius: 10px;
+    border: 0.5px solid lightgrey;
+}
+
+.box1:hover {
+    transform: scale(1.02);
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0px 4px 8px 0px lightgray;
+    border: 1px solid lightgrey;
+
+}
+
+.box1 .img-fluid {
+    border-radius: 20px;
+}
+
+.scroll {
+    display: none;
+}
+
+img {
+    border-radius: 20px;
+}
+
+.noflow {
+    overflow: hidden;
+}
+
+.in-btw {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-box img {
+    width: 80%;
+}
+
+.prog td {
+    padding: 5px;
+}
+
+.prog .in-btw {
+    padding-bottom: 30px;
+}
+
+.prog td i {
+    color: rgb(25, 161, 52);
+}
+
+.grnbtn {
+    border: none;
+    padding: 6px 24px 6px 24px;
+    background-color: rgb(25, 161, 52);
+    color: white;
+    border-radius: 4px;
+}
+
+.mainbig {
+    font-size: 40px;
+}
+
+.midbg {
+    font-size: 31px;
+}
+
+#strg {
+    color: rgb(25, 161, 52);
+    ;
+}
+
+.nav-btn {
+    padding-top: 18px;
+}
+
+.nav-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-item {
+    padding-top: 22px;
+    font-weight: bold;
+}
+
+.menu-btn {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.navlog {
+    width: 10%;
+    padding-top: 5px;
+}
+
+.gymboy img {
+    margin-top: 0px;
+}
+
+i {
+    font-size: 46px;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+    .menu-btn {
+        display: block;
+    }
+
+    .carapp{
+        flex-direction: column;
+    }
+
+    .revi{
+        padding: 0px;
+        width: 80%;
+    }
+
+    iframe{
+        width: 300px;
+    }
+
+    .nav-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-btn {
+        display: block;
+        font-size: 26px;
+    }
+
+
+
+    .nav-item {
+        font-size: 10px;
+    }
+
+    .navlog {
+        width: 20%;
+    }
+
+    .nav-btn .grnbtn {
+        font-size: 6px;
+
+    }
+
+    .nav-item.hide {
+        display: none;
+    }
+
+    .navlog.hide {
+        display: none;
+    }
+
+    .nav-btn.hide {
+        display: none;
+    }
+
+    .hboz p {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 34px;
+    }
+
+
+
+
+
+
+}
