@@ -119,6 +119,7 @@ img {
 .in-btw {
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 
 .nav-box img {
@@ -198,10 +199,30 @@ i {
     font-size: 46px;
 }
 
+
+.footer img{
+    width: 20%;
+}
+
+.footer{
+    border-top: 1px solid lightgray ;
+    padding: 30px 0px 30px 0px;
+}
+
+
 @media only screen and (min-width: 300px) and (max-width: 600px) {
     .menu-btn {
         display: block;
     }
+
+    
+    .footer img{
+        width: 60%;
+    }
+    .footer h2{
+        font-size: 20px;
+    }
+
 
     .carapp{
         flex-direction: column;
