@@ -15,6 +15,28 @@
 
 </head>
 
+<script>
+    const senddata = async()=>{
+        let name = document.getElementById("nam").value;
+        let email = document.getElementById("eml").value;
+        let phone = document.getElementById("phn").value;
+        let msg = document.getElementById("msg").value;
+
+        const data = {name, email, phone, msg}
+
+        let resp = await fetch('https://hook.eu1.make.com/3z69ivtgwijhqexhjtyux4ijouy7q3sm',
+            {
+                method: "post",
+                body: JSON.stringify(data),
+                headers: {'Content-type': 'application/json'},
+            }
+        )
+        if(resp.ok){
+            alert("success")
+        }
+    }
+</script>
+
 <body>
 
     <div class="navbar">
@@ -179,14 +201,14 @@
                 <div class="box2">
                     <div class="in-btw mt-5">
                         <h3> Contact Us </h3>
-                    </div>
+                    </div> 
                     <div class="form p-4">
-                        <input type="text" placeholder="Enter Name" class="form-control">
-                        <input type="text" placeholder="Enter Email" class="form-control">
-                        <input type="text" placeholder="Enter Phone" class="form-control">
-                        <input type="text" placeholder="Enter msg" class="form-control">
+                        <input type="text" id="nam" placeholder="Enter Name" class="form-control">
+                        <input type="email" id="eml" placeholder="Enter Email" class="form-control">
+                        <input type="text" id="phn" placeholder="Enter Phone" class="form-control">
+                        <input type="text" id="msg" placeholder="Enter msg" class="form-control">
                         <div class="in-btw mt-5">
-                            <button class="grnbtn" type="submit"> Send Message </button>
+                            <button onclick="senddata()" class="grnbtn" type="submit"> Send Message </button>
                         </div>
                     </div>
                 </div>
